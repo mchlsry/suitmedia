@@ -1,0 +1,105 @@
+/* navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-weight: bold;
+    background-color: #ff6600;
+    padding: 0 20px;
+}
+
+/* logo */
+.navbar a img {
+    width: 35%;
+    height: auto;
+    margin-left: 150px;
+}
+
+.navbar-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+#navbarNav {
+    margin-left: 250px;
+}
+
+.nav-item {
+    margin-right: 5px;
+    color: white;
+}
+
+.nav-item a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+
+.btn-others {
+    border: none;
+    background: none;
+}
+
+.btn-ideas {
+    color: white;
+    position: relative;
+}
+
+.btn-ideas::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 5px; /* Ketebalan garis underline */
+    background-color: white;
+}
+
+/* section content ideas */
+/* background ideas */
+.bg-cover {
+    background-image: url('/assets/background-from-google-edited.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 932px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cline x1="18" y1="6" x2="6" y2="18"%3E%3C/line%3E%3Cline x1="6" y1="6" x2="18" y2="18"%3E%3C/line%3E%3C/svg%3E');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .navbar-toggler.collapsed .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cline x1="3" y1="6" x2="21" y2="6"%3E%3C/line%3E%3Cline x1="3" y1="12" x2="21" y2="12"%3E%3C/line%3E%3Cline x1="3" y1="18" x2="21" y2="18"%3E%3C/line%3E%3C/svg%3E');
+    }
+}
